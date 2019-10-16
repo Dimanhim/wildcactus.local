@@ -1,0 +1,246 @@
+2019-04-21 20:34:18 [127.0.0.1][-][1rl76fjro9oi6qmfocnrmueda5][error][ReflectionException] exception 'ReflectionException' with message 'Class app\components\SefRule does not exist' in D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\di\Container.php:426
+Stack trace:
+#0 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\di\Container.php(426): ReflectionClass->__construct('app\\components\\...')
+#1 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\di\Container.php(364): yii\di\Container->getDependencies('app\\components\\...')
+#2 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('app\\components\\...', Array, Array)
+#3 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('app\\components\\...', Array, Array)
+#4 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\web\UrlManager.php(248): yii\BaseYii::createObject(Array)
+#5 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\web\UrlManager.php(190): yii\web\UrlManager->buildRules(Array)
+#6 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\base\BaseObject.php(108): yii\web\UrlManager->init()
+#7 [internal function]: yii\base\BaseObject->__construct(Array)
+#8 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\di\Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#9 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\web\\UrlMana...', Array, Array)
+#10 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\web\\UrlMana...', Array, Array)
+#11 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#12 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\base\Module.php(724): yii\di\ServiceLocator->get('urlManager', true)
+#13 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\base\Application.php(571): yii\base\Module->get('urlManager')
+#14 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2-debug\Module.php(197): yii\base\Application->getUrlManager()
+#15 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\base\Application.php(327): yii\debug\Module->bootstrap(Object(yii\web\Application))
+#16 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#17 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\base\Application.php(273): yii\web\Application->bootstrap()
+#18 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\base\BaseObject.php(108): yii\base\Application->init()
+#19 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\base\Application.php(206): yii\base\BaseObject->__construct(Array)
+#20 D:\OSPanel\domains\WildCactus\wildcactus.local\web\index.php(15): yii\base\Application->__construct(Array)
+#21 {main}
+2019-04-21 20:34:18 [127.0.0.1][-][1rl76fjro9oi6qmfocnrmueda5][info][application] $_COOKIE = [
+    'PHPSESSID' => '1rl76fjro9oi6qmfocnrmueda5'
+    '_csrf' => 'd229b96b28beb220d85c0640b192962420af395146ace4200510b7e3e2ef930fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"71TXEBLbXLRQ15gptMv9LCXWPJoEeALK\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'fromOrdersDate' => 1548772620
+    'toOrdersDate' => 1553956620
+    'loginLand' => 'admin'
+    'passwordLand' => 'e10adc3949ba59abbe56e057f20f883e'
+    'split' => 'index'
+    'userIp' => '127.0.0.1'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wildcactus.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://wildcactus.local/site/product?id=17'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=1rl76fjro9oi6qmfocnrmueda5; _csrf=d229b96b28beb220d85c0640b192962420af395146ace4200510b7e3e2ef930fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2271TXEBLbXLRQ15gptMv9LCXWPJoEeALK%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'd:\\ospanel\\modules\\php\\PHP-5.5\\ext;d:\\ospanel\\modules\\php\\PHP-5.5\\pear;d:\\ospanel\\modules\\php\\PHP-5.5\\pear\\bin;d:\\ospanel\\modules\\php\\PHP-5.5;d:\\ospanel\\modules\\imagemagick;d:\\ospanel\\modules\\wget\\bin;d:\\ospanel\\modules\\git;d:\\ospanel\\modules\\git\\bin;d:\\ospanel\\modules\\git\\mingw\\bin;d:\\ospanel\\modules\\git\\cmd;d:\\ospanel\\modules\\database\\MySQL-5.6\\bin;d:\\ospanel\\modules\\http\\Apache-2.4\\bin;d:\\ospanel\\modules\\http\\Apache-2.4;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'wildcactus.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OSPanel/domains/WildCactus/wildcactus.local'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OSPanel/domains/WildCactus/wildcactus.local'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OSPanel/domains/WildCactus/wildcactus.local/web/index.php'
+    'REMOTE_PORT' => '41071'
+    'REDIRECT_URL' => '/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1555868058.034
+    'REQUEST_TIME' => 1555868058
+    'argv' => []
+    'argc' => 0
+]
+2019-04-21 20:35:07 [127.0.0.1][-][1rl76fjro9oi6qmfocnrmueda5][error][ReflectionException] exception 'ReflectionException' with message 'Class app\components\SefRule does not exist' in D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\di\Container.php:426
+Stack trace:
+#0 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\di\Container.php(426): ReflectionClass->__construct('app\\components\\...')
+#1 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\di\Container.php(364): yii\di\Container->getDependencies('app\\components\\...')
+#2 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('app\\components\\...', Array, Array)
+#3 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('app\\components\\...', Array, Array)
+#4 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\web\UrlManager.php(248): yii\BaseYii::createObject(Array)
+#5 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\web\UrlManager.php(190): yii\web\UrlManager->buildRules(Array)
+#6 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\base\BaseObject.php(108): yii\web\UrlManager->init()
+#7 [internal function]: yii\base\BaseObject->__construct(Array)
+#8 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\di\Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#9 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\web\\UrlMana...', Array, Array)
+#10 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\web\\UrlMana...', Array, Array)
+#11 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#12 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\base\Module.php(724): yii\di\ServiceLocator->get('urlManager', true)
+#13 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\base\Application.php(571): yii\base\Module->get('urlManager')
+#14 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2-debug\Module.php(197): yii\base\Application->getUrlManager()
+#15 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\base\Application.php(327): yii\debug\Module->bootstrap(Object(yii\web\Application))
+#16 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#17 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\base\Application.php(273): yii\web\Application->bootstrap()
+#18 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\base\BaseObject.php(108): yii\base\Application->init()
+#19 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\base\Application.php(206): yii\base\BaseObject->__construct(Array)
+#20 D:\OSPanel\domains\WildCactus\wildcactus.local\web\index.php(15): yii\base\Application->__construct(Array)
+#21 {main}
+2019-04-21 20:35:07 [127.0.0.1][-][1rl76fjro9oi6qmfocnrmueda5][info][application] $_COOKIE = [
+    'PHPSESSID' => '1rl76fjro9oi6qmfocnrmueda5'
+    '_csrf' => 'd229b96b28beb220d85c0640b192962420af395146ace4200510b7e3e2ef930fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"71TXEBLbXLRQ15gptMv9LCXWPJoEeALK\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'fromOrdersDate' => 1548772620
+    'toOrdersDate' => 1553956620
+    'loginLand' => 'admin'
+    'passwordLand' => 'e10adc3949ba59abbe56e057f20f883e'
+    'split' => 'index'
+    'userIp' => '127.0.0.1'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wildcactus.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://wildcactus.local/site/product?id=17'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=1rl76fjro9oi6qmfocnrmueda5; _csrf=d229b96b28beb220d85c0640b192962420af395146ace4200510b7e3e2ef930fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2271TXEBLbXLRQ15gptMv9LCXWPJoEeALK%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'd:\\ospanel\\modules\\php\\PHP-5.5\\ext;d:\\ospanel\\modules\\php\\PHP-5.5\\pear;d:\\ospanel\\modules\\php\\PHP-5.5\\pear\\bin;d:\\ospanel\\modules\\php\\PHP-5.5;d:\\ospanel\\modules\\imagemagick;d:\\ospanel\\modules\\wget\\bin;d:\\ospanel\\modules\\git;d:\\ospanel\\modules\\git\\bin;d:\\ospanel\\modules\\git\\mingw\\bin;d:\\ospanel\\modules\\git\\cmd;d:\\ospanel\\modules\\database\\MySQL-5.6\\bin;d:\\ospanel\\modules\\http\\Apache-2.4\\bin;d:\\ospanel\\modules\\http\\Apache-2.4;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'wildcactus.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OSPanel/domains/WildCactus/wildcactus.local'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OSPanel/domains/WildCactus/wildcactus.local'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OSPanel/domains/WildCactus/wildcactus.local/web/index.php'
+    'REMOTE_PORT' => '41130'
+    'REDIRECT_URL' => '/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1555868107.596
+    'REQUEST_TIME' => 1555868107
+    'argv' => []
+    'argc' => 0
+]
+2019-04-21 20:36:19 [127.0.0.1][-][1rl76fjro9oi6qmfocnrmueda5][error][ReflectionException] exception 'ReflectionException' with message 'Class app\components\SefRule does not exist' in D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\di\Container.php:426
+Stack trace:
+#0 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\di\Container.php(426): ReflectionClass->__construct('app\\components\\...')
+#1 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\di\Container.php(364): yii\di\Container->getDependencies('app\\components\\...')
+#2 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('app\\components\\...', Array, Array)
+#3 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('app\\components\\...', Array, Array)
+#4 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\web\UrlManager.php(248): yii\BaseYii::createObject(Array)
+#5 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\web\UrlManager.php(190): yii\web\UrlManager->buildRules(Array)
+#6 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\base\BaseObject.php(108): yii\web\UrlManager->init()
+#7 [internal function]: yii\base\BaseObject->__construct(Array)
+#8 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\di\Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#9 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\web\\UrlMana...', Array, Array)
+#10 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\web\\UrlMana...', Array, Array)
+#11 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject(Array)
+#12 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\base\Module.php(724): yii\di\ServiceLocator->get('urlManager', true)
+#13 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\base\Application.php(571): yii\base\Module->get('urlManager')
+#14 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2-debug\Module.php(197): yii\base\Application->getUrlManager()
+#15 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\base\Application.php(327): yii\debug\Module->bootstrap(Object(yii\web\Application))
+#16 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#17 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\base\Application.php(273): yii\web\Application->bootstrap()
+#18 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\base\BaseObject.php(108): yii\base\Application->init()
+#19 D:\OSPanel\domains\WildCactus\wildcactus.local\vendor\yiisoft\yii2\base\Application.php(206): yii\base\BaseObject->__construct(Array)
+#20 D:\OSPanel\domains\WildCactus\wildcactus.local\web\index.php(15): yii\base\Application->__construct(Array)
+#21 {main}
+2019-04-21 20:36:19 [127.0.0.1][-][1rl76fjro9oi6qmfocnrmueda5][info][application] $_COOKIE = [
+    'PHPSESSID' => '1rl76fjro9oi6qmfocnrmueda5'
+    '_csrf' => 'd229b96b28beb220d85c0640b192962420af395146ace4200510b7e3e2ef930fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"71TXEBLbXLRQ15gptMv9LCXWPJoEeALK\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'fromOrdersDate' => 1548772620
+    'toOrdersDate' => 1553956620
+    'loginLand' => 'admin'
+    'passwordLand' => 'e10adc3949ba59abbe56e057f20f883e'
+    'split' => 'index'
+    'userIp' => '127.0.0.1'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'wildcactus.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://wildcactus.local/site/product?id=17'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=1rl76fjro9oi6qmfocnrmueda5; _csrf=d229b96b28beb220d85c0640b192962420af395146ace4200510b7e3e2ef930fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2271TXEBLbXLRQ15gptMv9LCXWPJoEeALK%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'd:\\ospanel\\modules\\php\\PHP-5.5\\ext;d:\\ospanel\\modules\\php\\PHP-5.5\\pear;d:\\ospanel\\modules\\php\\PHP-5.5\\pear\\bin;d:\\ospanel\\modules\\php\\PHP-5.5;d:\\ospanel\\modules\\imagemagick;d:\\ospanel\\modules\\wget\\bin;d:\\ospanel\\modules\\git;d:\\ospanel\\modules\\git\\bin;d:\\ospanel\\modules\\git\\mingw\\bin;d:\\ospanel\\modules\\git\\cmd;d:\\ospanel\\modules\\database\\MySQL-5.6\\bin;d:\\ospanel\\modules\\http\\Apache-2.4\\bin;d:\\ospanel\\modules\\http\\Apache-2.4;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'wildcactus.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OSPanel/domains/WildCactus/wildcactus.local'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OSPanel/domains/WildCactus/wildcactus.local'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OSPanel/domains/WildCactus/wildcactus.local/web/index.php'
+    'REMOTE_PORT' => '41225'
+    'REDIRECT_URL' => '/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1555868179.19
+    'REQUEST_TIME' => 1555868179
+    'argv' => []
+    'argc' => 0
+]
