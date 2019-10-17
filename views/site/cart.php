@@ -50,7 +50,7 @@ $this->params['breadcrumbs'][] = array(
                <tr class="cart-tr" data-product="<?= $product->id ?>">
                   <td class="img-cart-product">
                      <span class="product-id"><?= $product->id ?></span>
-                     <img src="<?= PATH.$product->img ?>" alt="">
+                     <img src="<?= PATH.$product->preview ?>" alt="">
                   </td>
                   <td class="title-cart-product">
                      <a href="<?= Yii::$app->urlManager->createUrl(['site/product', 'id' => $product->id]) ?>"><?= $functions->getShortAlias($product->name) ?></a>
@@ -108,7 +108,7 @@ $this->params['breadcrumbs'][] = array(
                <div class="image-product">
                 <?php if($hit->img) { ?>
                   <a href="<?= Yii::$app->urlManager->createUrl(['site/product', 'id' => $hit->id]) ?>" class="a-item">
-                    <img src="<?= PATH.$hit->img ?>" alt="">
+                    <img src="<?= PATH.$hit->preview ?>" alt="">
                   </a>
                 <?php } ?>
                </div>
@@ -159,7 +159,7 @@ $this->params['breadcrumbs'][] = array(
                 <div class="image-product">
                  <?php if($new->img) { ?>
                    <a href="<?= Yii::$app->urlManager->createUrl(['site/product', 'id' => $new->id]) ?>" class="a-item">
-                     <img src="<?= PATH.$new->img ?>" alt="">
+                     <img src="<?= PATH.$new->preview ?>" alt="">
                    </a>
                  <?php } ?>
                 </div>

@@ -5,9 +5,56 @@ namespace app\components;
 use Yii;
 
 use app\components\Functions;
+use Imagine\Gd\Imagine;
+use Imagine\Image\Box ;
+use Imagine\Image\Point ;
+
+use app\models\Products;
 
 $function = new Functions();
 if(!$function->isAdmin()) $function->redirectLogin(Yii::$app->urlManager->createUrl(['admin/login']));
+?>
+<?php
+$im = new Imagine();
+//----------------------уменьшить все изображения
+/*
+$dirs = scandir('admin-images');
+$match = "/product/";
+foreach($dirs as $dir)
+{
+    if(preg_match($match, $dir)) {
+        $names = explode('.', $dir);
+        $name = $names[0];
+        $extension = $names[1];
+        $img = $im->open('admin-images/'.$dir);
+        $img->resize(new Box(220,330))
+            ->save( 'admin-images/'.$name.'-small.'.$extension);
+    }
+}
+*/
+
+
+
+
+
+
+
+
+//----------------добавить название превью в таблицу
+
+$prod = Products::find()->all();
+foreach($prod as $p)
+{
+    $img = $p->img;
+    $names = explode('.', $img);
+    $name = $names[0];
+    $extension = $names[1];
+    $p->preview = $name.'-small.'.$extension;
+    $p->save();
+}
+
+
+//exit;
 ?>
 <div class="col-md-10">
 	<div class="menu">

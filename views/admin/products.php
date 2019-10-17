@@ -39,7 +39,7 @@ if(!$function->isAdmin()) $function->redirectLogin(Yii::$app->urlManager->create
 					<td><?=$product->orderby?></td>
 					<td class="cat-img">
 						<a href="<?= Yii::$app->urlManager->createUrl(['admin/product', 'id' => $product->id]) ?>">
-							<img src="<?= PATH.$product->img ?>" alt="" />
+							<img src="<?= PATH.$product->preview ?>" alt="" />
 						</a>
 					</td>
 					<td><a href="<?= Yii::$app->urlManager->createUrl(['admin/product', 'id' => $product->id]) ?>"><?=$product->name?></a></td>

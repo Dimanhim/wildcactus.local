@@ -54,6 +54,9 @@ use app\components\Translit;
 use yii\data\Pagination;
 use yii\web\UploadedFile;
 use himiklab\sortablegrid\SortableGridAction;
+use Imagine\Gd\Imagine;
+use Imagine\Image\Box ;
+use Imagine\Image\Point ;
 
 
 class AdminController extends Controller
@@ -1182,8 +1185,15 @@ class AdminController extends Controller
             } else {
                 $form->file = UploadedFile::getInstance($form, 'file');
                 if($form->file) {
-                    $form->file->saveAs('admin-images/product-'.$id.'.'. $form->file->extension);
-                    $product->img = 'product-'.$id.'.'. $form->file->extension;
+                    $file_name = 'product-'.$id;
+                    $file_extension = '.'.$form->file->extension;
+                    $form->file->saveAs('admin-images/'.$file_name.$file_extension);
+                    $product->img = $file_name.$file_extension;
+                    $im = new Imagine();
+                    $img = $im->open('admin-images/'.$file_name.$file_extension);
+                    $img->resize(new Box(220,330))
+                        ->save( 'admin-images/'.$file_name.'-small'.$file_extension);
+                    $product->preview = $file_name.'-small'.$file_extension;
                 }
                 
                 if($product->save()) $message = 'Товар успешно отредактирован';   

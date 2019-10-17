@@ -20,7 +20,7 @@ $this->params['breadcrumbs'][] = array(
                <?php $product = $functions->getProductFromCart($cart->product) ?>
                   <tr class="cart-tr cart-tr-border" data-product="<?= $product->id ?>">
                      <td class="img-cart-product">
-                        <img src="<?= PATH.$product->img ?>" alt="" />
+                        <img src="<?= PATH.$product->preview ?>" alt="" />
                         <span class="price-product-ch now-price"><i><?= $product->price ?></i>р.</span>
                      </td>
                      <td class="now-price" style="display: none">

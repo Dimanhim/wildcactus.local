@@ -43,7 +43,7 @@ $this->params['breadcrumbs'][] = array(
                   </div>
                   <div class="image-product">
                       <a href="<?= Yii::$app->urlManager->createUrl(['site/product', 'id' => $product->id]) ?>" class="a-item">
-                        <img src="<?= PATH.$product->img ?>" alt="">
+                        <img src="<?= PATH.$product->preview ?>" alt="">
                       </a>
                   </div>
                   <div class="price-product"><?= $product->price ?> р.</div>

@@ -58,16 +58,16 @@ $this->params['breadcrumbs'][] = array(
                   <div class="wp-gallery-carousel">
                      <button class="top-arrow"></button>
                      <div class="slick-carousel">
-                         <div><img src="<?= PATH.$product->img ?>" alt=""></div>
+                         <div><img src="<?= PATH.$product->preview ?>" alt=""></div>
                      <?php foreach($images as $image) { ?>
-                         <div><img src="<?= PATH.$image->img ?>" alt=""></div>
+                         <div><img src="<?= PATH.$image->preview ?>" alt=""></div>
                      <?php } ?>
                      </div>
                      <button class="bottom-arrow"></button>
                   </div>
                   <div class="one-img-product f-l">
                       <a href="<?= PATH.$product->img ?>" class="fancy-img">
-                          <img src="<?= PATH.$product->img ?>" alt="">
+                          <img src="<?= PATH.$product->preview ?>" alt="">
                       </a>
 
                   </div>

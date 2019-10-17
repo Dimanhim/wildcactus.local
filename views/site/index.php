@@ -38,7 +38,7 @@ $this->registerMetaTag(['name' => 'description ', 'content' => $page->metadesc])
                  <div class="image-product">
                   <?php if($new->img) { ?>
                     <a href="<?= Yii::$app->urlManager->createUrl(['site/product', 'id' => $new->id]) ?>" class="a-item">
-                      <img src="<?= PATH.$new->img ?>" alt="">
+                      <img src="<?= PATH.$new->preview ?>" alt="">
                     </a>
                   <?php } ?>
                  </div>
@@ -92,7 +92,7 @@ $this->registerMetaTag(['name' => 'description ', 'content' => $page->metadesc])
                <div class="image-product">
                 <?php if($hit->img) { ?>
                   <a href="<?= Yii::$app->urlManager->createUrl(['site/product', 'id' => $hit->id]) ?>" class="a-item">
-                    <img src="<?= PATH.$hit->img ?>" alt="">
+                    <img src="<?= PATH.$hit->preview ?>" alt="">
                   </a>
                 <?php } ?>
                </div>
