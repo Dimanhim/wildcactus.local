@@ -23,6 +23,7 @@ composer.phar
 
 # phpunit itself is not needed
 phpunit.phar
+example.php
 # local phpunit config
 /phpunit.xml
 

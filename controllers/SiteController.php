@@ -623,12 +623,15 @@ class SiteController extends Controller
             $subject = 'Заполнена контактная форма с сайта '.$site;
             if(
             Yii::$app->mailer->compose('user', ['site' => $site, 'admin' => $admin, 'name' => $name, 'phone' => $phone, 'email' => $email, 'list' => $plan, 'btn' => $btn])
-                ->setFrom(['info@wildcactus.ru' => $mailname])
+                ->setFrom(['wildcactus26@yandex.ru' => $mailname])
                  ->setTo($mail)
                 ->setSubject($subject)
                 ->setTextBody(' ')
                 ->send()
-            ) $success = true;
+            ) {
+                $success = true;
+                return $this->redirect('success-message');
+            }
             }
             else $success = false;
         }
@@ -727,6 +730,11 @@ class SiteController extends Controller
             //'page' => $page,
             //'search' => $search,
         ]);
+    }
+    public function actionSuccessMessage()
+    {
+
+        return $this->render('success-message');
     }
     public function actionPay()
     {

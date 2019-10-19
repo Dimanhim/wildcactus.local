@@ -150,6 +150,11 @@ jQuery(document).ready(function () {
         jQuery('.mail-form').css('display', 'none');
         jQuery('.sdek').css('display', 'block');
     });
+    jQuery('.privat').on('click', function() {
+        $('#one-click').modal('hide');
+        $('#privat').modal('show');
+        return false;
+    });
 
 
 });

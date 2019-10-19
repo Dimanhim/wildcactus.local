@@ -23,7 +23,8 @@ $config = [
             'rules' => [
                 [
                     'class' => 'app\components\SefRule',
-                    'connectionID' => 'db'
+                    'connectionID' => 'db',
+                    
                 ]
             ]
         ],
@@ -45,6 +46,14 @@ $config = [
             // for the mailer to send real emails.
 
             'useFileTransport' => false,
+            'transport' => [
+                'class' => 'Swift_SmtpTransport',
+                'host' => 'smtp.yandex.ru',
+                'username' => 'wildcactus26@yandex.ru',
+                'password' => 'mB41efmk',
+                'port' => '465',
+                'encryption' => 'ssl',
+            ],
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
@@ -55,15 +64,13 @@ $config = [
                 ],
             ],
         ],
-        'session'=>[
-            'timeout'=>365*24*60*60,
-        ],
         'db' => $db,
         /*
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+              'web/index' => 'site/index',
             ],
         ],
         */

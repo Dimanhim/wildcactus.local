@@ -109,7 +109,8 @@
             type: form.attr("method"),
             data: formData,
             success: function (response) {
-                if($('#form-c').is(':visible')) $('#form-c').modal("fade");
+            	console.log(response);
+                if($('.modal.fade').is(':visible')) $('.modal.fade').modal("fade");
                 $('#thank-you').modal('show');
             },
             error: function () {

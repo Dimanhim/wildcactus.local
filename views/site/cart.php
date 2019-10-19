@@ -18,21 +18,17 @@ $this->params['breadcrumbs'][] = array(
             <h5>
                Заполните форму и Ваш заказ будет принят
             </h5>
-               <?php $form = ActiveForm::begin(['fieldConfig' => ['options' => ['tag' => false]], 'options' => ['class' => 'form send-cart']]) ?>
+               <?php $form = ActiveForm::begin(['fieldConfig' => ['options' => ['tag' => false]], 'options' => ['class' => 'form send-dat']]) ?>
                   <?= $form->field($pageForm, 'name', ['template' => "{input}"])->textInput(['placeholder' => "Ваше имя", 'class' => '']) ?>
                   <?= $form->field($pageForm, 'phone', ['template' => "{input}"])->textInput(['placeholder' => "Телефон", 'class' => 'phone']) ?>
                   <?= $form->field($pageForm, 'plan', ['template' => "{input}"])->textInput(['placeholder' => 'Удобное время для звонка', 'class' => '']) ?>
+                  <?= $form->field($pageForm, 'btn', ['template' => "{input}"])->hiddenInput(['value' => 'Купить в один клик']) ?>
                   <div class="wp-prav">
-                     <div class="wp-radio">
-                        <input type="checkbox" name="delivery" id="n50">
-                        <label for="n50"></label>
-                     </div>
-                     <label for="n50" class="p">Я согласен с <span>политикой обработки персональных данных</span></label>
+                     <a href="#" class="privat">Политика обработки персональных данных</a>
                   </div>
                   <div class="tac">
                      <?= Html::submitButton("<b>Заказать звонок</b>", ['class' => "main-bt green"]) ?>
                   </div>
-                  <label for="n50" class="p">Я согласен с <span>политикой обработки персональных данных</span></label>
             <?php ActiveForm::end() ?>
          </div>
        </div>
