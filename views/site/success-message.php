@@ -2,7 +2,7 @@
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use yii\helpers\Url;
-$this->title = $page->title;
+$this->title = 'Заявка успешно отправлена!';
 $this->registerMetaTag(['name' => 'description ', 'content' => 'Заявка успешно отправлена!']);
 $this->params['breadcrumbs'][] = array(
     'label'=> 'Успешная отправка заявки',

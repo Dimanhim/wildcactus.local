@@ -1,6 +1,9 @@
 <?php
 use app\components\Functions;
+use yii\helpers\Html;
 use yii\helpers\Url;
+use yii\widgets\ActiveForm;
+
 $functions = new Functions();
 $this->title = $product->name;
 $parentCat = $functions->getParentCategory($product->id);
@@ -28,21 +31,29 @@ $this->params['breadcrumbs'][] = array(
                через менеджера<br>
                Заполните форму и Ваш заказ будет принят
             </h5>
-            <div class="form">
+             <?php $form = ActiveForm::begin(['fieldConfig' => ['options' => ['tag' => false]], 'options' => ['class' => 'form send-dat']]) ?>
+             <?= $form->field($pageForm, 'name', ['template' => "{input}"])->textInput(['placeholder' => "Ваше имя", 'class' => '']) ?>
+             <?= $form->field($pageForm, 'phone', ['template' => "{input}"])->textInput(['placeholder' => "Телефон", 'class' => 'phone']) ?>
+             <?= $form->field($pageForm, 'plan', ['template' => "{input}"])->textInput(['placeholder' => 'Удобное время для звонка', 'class' => '']) ?>
+             <?= $form->field($pageForm, 'btn', ['template' => "{input}"])->hiddenInput(['value' => 'Купить в один клик']) ?>
+             <div class="wp-prav">
+                 <a href="#" class="privat">Политика обработки персональных данных</a>
+             </div>
+             <div class="tac">
+                 <?= Html::submitButton("<b>Заказать звонок</b>", ['class' => "main-bt green"]) ?>
+             </div>
+             <?php ActiveForm::end() ?>
+            <!--<div class="form">
                <input type="text" placeholder="Ваше имя">
                <input type="text" class="phone" placeholder="Телефон">
                <input type="text" placeholder="Удобное время для звонка">
-               <div class="wp-prav">
-                  <div class="wp-radio">
-                     <input type="checkbox" name="delivery" id="n50">
-                     <label for="n50"></label>
-                  </div>
-                  <label for="n50" class="p">Я согласен с <span>политикой обработки персональных данных</span></label>
-               </div>
+                <div class="wp-prav">
+                    <a href="#" class="privat">Политика обработки персональных данных</a>
+                </div>
                <div class="tac">
                   <button class="main-bt green"><b>Заказать звонок</b></button>
                </div>
-            </div>
+            </div>-->
          </div>
        </div>
      </div>
